@@ -1,37 +1,59 @@
 # IDKWID
 
-Landing page estatica pronta para publicar no GitHub Pages com dominio customizado `idkwid.com.br`.
+![IDKWID logo](assets/logo-512.png)
 
-## Arquivos principais
+Landing page oficial da **IDKWID**, um estudio indie focado em desenvolvimento de jogos, projetos criativos e publicacao para Google Play.
 
-- `index.html`: estrutura da landing page
-- `styles.css`: identidade visual e responsividade
-- `script.js`: micro animacoes leves
+O site foi construido como uma pagina estatica para deploy simples no **GitHub Pages**, com suporte a:
+
+- dominio customizado `idkwid.com.br`
+- SEO basico para indexacao no Google
+- Open Graph e Twitter Cards
+- sitemap e robots
+- alternancia de idioma `EN / PT-BR`
+
+## Sobre o site
+
+A pagina segue a identidade visual da marca IDKWID:
+
+- visual indie, cartoon e grunge
+- hero section com banner em tela cheia
+- foco em estudios de games e criacao autoral
+- layout pensado para desktop e mobile
+
+## Estrutura do projeto
+
+- `index.html`: estrutura principal da landing page
+- `styles.css`: identidade visual, responsividade e animacoes
+- `script.js`: micro interacoes e troca de idioma
+- `assets/`: imagens da marca e artes do hero
 - `CNAME`: dominio customizado do GitHub Pages
-- `robots.txt` e `sitemap.xml`: base de SEO
+- `robots.txt`: diretrizes para indexacao
+- `sitemap.xml`: sitemap principal do site
+- `site.webmanifest`: configuracao basica do site como web app
 
-## Publicar no GitHub Pages
+## Deploy no GitHub Pages
 
 1. Suba este repositorio para o GitHub.
-2. No repositorio, abra `Settings > Pages`.
+2. Abra `Settings > Pages`.
 3. Em `Build and deployment`, selecione `Deploy from a branch`.
 4. Escolha a branch principal e a pasta `/ (root)`.
-5. Aguarde o deploy e confirme que o `CNAME` foi mantido.
+5. Confirme que o arquivo `CNAME` foi mantido no repositorio.
 
-## Configurar DNS no Registro.br
+## Dominio customizado
 
-Para o dominio raiz `idkwid.com.br`, crie estes registros A:
+O projeto esta preparado para usar:
 
-- `185.199.108.153`
-- `185.199.109.153`
-- `185.199.110.153`
-- `185.199.111.153`
+- `https://idkwid.com.br`
+- `https://www.idkwid.com.br`
 
-Para `www.idkwid.com.br`, crie um CNAME apontando para:
+Configuracao esperada para GitHub Pages:
 
-- `SEU_USUARIO.github.io`
-
-Se quiser usar apenas o dominio raiz, voce pode redirecionar `www` para `idkwid.com.br` no proprio Registro.br.
+- `A @ -> 185.199.108.153`
+- `A @ -> 185.199.109.153`
+- `A @ -> 185.199.110.153`
+- `A @ -> 185.199.111.153`
+- `CNAME www -> marcusitalo.github.io`
 
 ## Google Search Console
 
@@ -41,12 +63,17 @@ No arquivo `index.html` ja existe a meta tag:
 <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_TOKEN">
 ```
 
-Substitua o valor pelo token real fornecido pelo Google Search Console.
+Substitua esse valor pelo token real do Google Search Console se optar por verificacao via meta tag.
 
-Se o Google pedir verificacao por arquivo, troque o conteudo de `google-site-verification.txt` pelo arquivo exato gerado pela plataforma.
+O sitemap do projeto esta disponivel em:
 
-## Antes de publicar
+```txt
+https://idkwid.com.br/sitemap.xml
+```
 
-- Troque o link do Google Play quando a pagina do app estiver pronta.
-- Atualize `idkwid.not@gmail.com` se quiser usar outro email.
-- Se adicionar paginas novas, atualize `sitemap.xml`.
+## Ajustes futuros
+
+- trocar o token de verificacao do Google
+- atualizar links finais dos jogos quando forem publicados
+- revisar descricoes SEO conforme novos jogos e paginas forem adicionados
+- atualizar o e-mail de contato se necessario

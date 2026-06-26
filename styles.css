@@ -93,8 +93,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
-  backdrop-filter: blur(18px);
+  width: 100%;
+  padding: 1rem max(1rem, calc((100vw - 1180px) / 2));
+  background: linear-gradient(90deg, #212719 0%, #171c13 44%, #000000 100%);
+  border-bottom: 1px solid rgba(230, 221, 204, 0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(12px);
 }
 
 .header-tools {
@@ -622,6 +626,8 @@ a {
     position: static;
     flex-direction: column;
     gap: 1rem;
+    width: min(100%, 100%);
+    padding: 1rem;
   }
 
   .header-tools {
