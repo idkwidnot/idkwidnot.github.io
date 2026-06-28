@@ -53,7 +53,7 @@ Configuracao esperada para GitHub Pages:
 - `A @ -> 185.199.109.153`
 - `A @ -> 185.199.110.153`
 - `A @ -> 185.199.111.153`
-- `CNAME www -> marcusitalo.github.io`
+- `CNAME www -> idkwidnot.github.io`
 
 ## Google Search Console
 
