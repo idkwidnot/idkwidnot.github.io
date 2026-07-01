@@ -93,11 +93,11 @@ const translations = {
     processEyebrow: "Processo criativo",
     processTitle: "Do caos ao release.",
     step1: "Ideia",
-    step2: "Ambicao demais",
+    step2: "Ambição absurda",
     step3: "Tudo quebrou",
-    step4: "Cafe",
+    step4: "Café",
     step5: "De algum jeito funciona",
-    step6: "Lancamento",
+    step6: "Lançamento",
     footerText: "Feito com curiosidade. Movido a Ctrl+Z."
   }
 };
